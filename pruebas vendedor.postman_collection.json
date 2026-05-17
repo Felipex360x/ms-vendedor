@@ -1,0 +1,366 @@
+{
+  "info": {
+    "_postman_id": "a44ea56e-de2d-4d42-97e5-f08900ded7ff",
+    "name": "pruebas vendedor",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29078882"
+  },
+  "item": [
+    {
+      "name": "listar vendedor",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "13.219.97.37:8085/api/v2/vendedores",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "v2",
+            "vendedores"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "listar vendedor",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "13.219.97.37:8085/api/v2/vendedores",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "v2",
+                "vendedores"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:48:25 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"UsuarioId\": 11,\n        \"nombreUsuario\": null,\n        \"correoUsuario\": null,\n        \"cantidadVendido\": 2,\n        \"historialVendido\": \"chapitas,pack de cartas,cartas sueltas\",\n        \"mayorVendido\": 40000,\n        \"detalleMayor\": \"pack de cartas super delux\",\n        \"menorVendido\": 3,\n        \"detalleMenor\": \"chapitas de pokemon x3 5.000\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "validacion vendedor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "13.219.97.37:8085/api/v2/vendedores",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "v2",
+            "vendedores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "crear vendedor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"usuarioId\": 6,\r\n        \"cantidadVendido\": 2,\r\n        \"historialVendido\": \"chapitas,pack de cartas,cartas sueltas\",\r\n        \"mayorVendido\": 40000,\r\n        \"detalleMayor\": \"pack de cartas super delux\",\r\n        \"menorVendido\": 3,\r\n        \"detalleMenor\": \"chapitas de pokemon x3 5.000\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "13.219.97.37:8085/api/v2/vendedores",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "v2",
+            "vendedores"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "crear vendedor",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"usuarioId\": 6,\r\n        \"cantidadVendido\": 2,\r\n        \"historialVendido\": \"chapitas,pack de cartas,cartas sueltas\",\r\n        \"mayorVendido\": 40000,\r\n        \"detalleMayor\": \"pack de cartas super delux\",\r\n        \"menorVendido\": 3,\r\n        \"detalleMenor\": \"chapitas de pokemon x3 5.000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "13.219.97.37:8085/api/v2/vendedores",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "v2",
+                "vendedores"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:50:28 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 2,\n    \"UsuarioId\": 6,\n    \"nombreUsuario\": \"fabian\",\n    \"correoUsuario\": \"fabi.Lobos@gmail.com\",\n    \"cantidadVendido\": 2,\n    \"historialVendido\": \"chapitas,pack de cartas,cartas sueltas\",\n    \"mayorVendido\": 40000,\n    \"detalleMayor\": \"pack de cartas super delux\",\n    \"menorVendido\": 3,\n    \"detalleMenor\": \"chapitas de pokemon x3 5.000\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "actaulizar vendedor",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"usuarioId\": 8,\r\n        \"cantidadVendido\": 2,\r\n        \"historialVendido\": \"chapitas,pack de cartas,cartas sueltas\",\r\n        \"mayorVendido\": 40000,\r\n        \"detalleMayor\": \"pack de cartas super delux\",\r\n        \"menorVendido\": 3,\r\n        \"detalleMenor\": \"chapitas de pokemon x3 5.000\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "13.219.97.37:8085/api/v2/vendedores/2",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "v2",
+            "vendedores",
+            "2"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "actaulizar vendedor",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"usuarioId\": 8,\r\n        \"cantidadVendido\": 2,\r\n        \"historialVendido\": \"chapitas,pack de cartas,cartas sueltas\",\r\n        \"mayorVendido\": 40000,\r\n        \"detalleMayor\": \"pack de cartas super delux\",\r\n        \"menorVendido\": 3,\r\n        \"detalleMenor\": \"chapitas de pokemon x3 5.000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "13.219.97.37:8085/api/v2/vendedores/2",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "v2",
+                "vendedores",
+                "2"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:51:37 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 2,\n    \"UsuarioId\": 8,\n    \"nombreUsuario\": \"Leo\",\n    \"correoUsuario\": \"leoleo@gmail.com\",\n    \"cantidadVendido\": 2,\n    \"historialVendido\": \"chapitas,pack de cartas,cartas sueltas\",\n    \"mayorVendido\": 40000,\n    \"detalleMayor\": \"pack de cartas super delux\",\n    \"menorVendido\": 3,\n    \"detalleMenor\": \"chapitas de pokemon x3 5.000\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "elimiar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "13.219.97.37:8085/api/v2/vendedores/2",
+          "host": [
+            "13",
+            "219",
+            "97",
+            "37"
+          ],
+          "port": "8085",
+          "path": [
+            "api",
+            "v2",
+            "vendedores",
+            "2"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "elimiar",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "13.219.97.37:8085/api/v2/vendedores/2",
+              "host": [
+                "13",
+                "219",
+                "97",
+                "37"
+              ],
+              "port": "8085",
+              "path": [
+                "api",
+                "v2",
+                "vendedores",
+                "2"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 17 May 2026 21:52:21 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ]
+}
